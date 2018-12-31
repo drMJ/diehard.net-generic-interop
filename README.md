@@ -3,7 +3,7 @@ A .Net class providing typed access to unmanaged memory using generics.
 This is particularly useful when writing generic code (that is, code that uses .Net generics) which needs to interoperate with unmanaged code. However, the class can be used whenever interop is required, since there is no performance penalty in using this library compared to hand-written code (and in fact accessing unmanaged memory arrays using this class is faster than accessing managed arrays). 
 
 ## Details:
-Given a memory pointer, the various methods can read/write any simple value type or array of simple value types, 
+Given a memory pointer (managed or unmanaged), the class can read/write any simple value type or array of simple value types, 
 where "simple value type" means any simple type or any user defined struct containing only simple value types.
 Simple types are the built-in types defined in the System namespace (byte, char, int etc.) except object and string (see https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-types-table) 
 
